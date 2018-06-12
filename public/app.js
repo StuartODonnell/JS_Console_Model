@@ -1,12 +1,11 @@
 var app = function() {
 
 
-
 addCat("Mr T(iddles)", "milk that tastes funny", "http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg");
 
 };
 
-var addQuote = function(catName, favFood, catImageURL){
+var addCat = function(catName, favFood, catImageURL){
   var catsSection = createCatsSection();
   var catUl = createCatUl();
   var catName = createCatName(catName);
@@ -44,3 +43,5 @@ const createCatImage = function(catImageURL){
   li.innerHTML = "<img src=\"" + catImageURL + "\">";
   return catImageURL;
 }
+
+window.onload = app;
